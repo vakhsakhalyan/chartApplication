@@ -27,7 +27,7 @@ var ChatServer = (function () {
             });
         });
     };
-    ChatServer.prototype.getAplication = function () {
+    ChatServer.prototype.getApplication = function () {
         return this.app;
     };
     ChatServer.PORT = 8080;
