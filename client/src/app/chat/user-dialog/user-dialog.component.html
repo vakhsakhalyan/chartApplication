@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Welcome</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput
+           #inputMessage
+           maxlength="140"
+           placeholder="Type your username" required [formControl]="usernameRequireControl">
+    <mat-error>This field is required</mat-error>
+    <mat-hint>Please type your username</mat-hint>
+  </mat-form-field>
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" (click)="joinChat(inputMessage.value)">Join to chat</button>
+  </mat-dialog-actions>
+</mat-dialog-content>

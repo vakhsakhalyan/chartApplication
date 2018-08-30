@@ -1,9 +1,14 @@
-<div class="main-card">
-  <mat-form-field appearance="legacy">
-    <mat-label>Legacy form field</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
+<div class="container">
+  <mat-card class="main-card">
+    <div class="footer-container">
+      <mat-icon>message</mat-icon>
+      <mat-form-field class="chat-input" hintLabel="Max 140 characters">
+        <input matInput
+               #inputMessage
+               maxlength="140"
+               placeholder="Type your message">
+        <mat-hint align="end">{{inputMessage.value.length}}/140</mat-hint>
+      </mat-form-field>
+    </div>
+  </mat-card>
 </div>
-
