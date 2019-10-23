@@ -3,7 +3,7 @@ import * as io from 'socket.io';
 import {createServer, Server} from "http";
 
 export class ChatServer {
-    public static PORT:number = 8080;
+    public static PORT:number = 8283;
     private app: express.Application;
     private io: io.Server;
     private port: number | string;
