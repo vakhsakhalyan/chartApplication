@@ -17,3 +17,9 @@
   left:25px;
   right:25px;
 }
+.user-badge {
+  position: absolute;
+  right: 1%;
+  top: 35px;
+  z-index: 1;
+}

@@ -16,7 +16,9 @@ export class UserDialogComponent implements OnInit {
 
   joinChat(value) {
     if (value.trim().length) {
-      this.dialogRef.close();
+      this.dialogRef.close({
+        username: value
+      });
     }
 
 

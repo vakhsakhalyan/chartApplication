@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var io = require("socket.io");
 var http_1 = require("http");
-var ChatServer = (function () {
+var ChatServer = /** @class */ (function () {
     function ChatServer() {
         this.app = express();
         this.port = process.env.PORT || ChatServer.PORT;
