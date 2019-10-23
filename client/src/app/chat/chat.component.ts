@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatList, MatListItem } from '@angular/material';
 import {UserDialogComponent} from "./user-dialog/user-dialog.component";
-import {User} from "../model/user";
 
 @Component({
   selector: 'app-chat',
@@ -9,7 +8,6 @@ import {User} from "../model/user";
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit {
-  user: User;
 
   defaultDialogUserParams: any = {
     disableClose: true,
@@ -26,8 +24,7 @@ export class ChatComponent implements OnInit {
 
   openUserPopup(param) {
     let dialogRef = this.dialog.open(UserDialogComponent, param);
-    dialogRef.afterClosed().subscribe(result => {
-      this.user.username = result.username;
-    });
+
   }
+
 }
